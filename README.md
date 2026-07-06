@@ -38,7 +38,7 @@ Client communication & requirements gathering · Community relations · Microsof
 - **African Root** — herbal eCommerce store, 50+ products, online checkout
 - **Sneakers Galore** — online store with WhatsApp checkout
 
-More on my [portfolio site](#) and pinned repos below.
+More on my [portfolio site](https://given-dev.vercel.app/portfolio.html) and pinned repos below.
 
 ## Get in touch
 
