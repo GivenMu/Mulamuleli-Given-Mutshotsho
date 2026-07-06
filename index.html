@@ -23,6 +23,7 @@
   --wrap:1180px;
 }
 *{box-sizing:border-box;}
+html,body{overflow-x:hidden;max-width:100%;}
 html{scroll-behavior:smooth;}
 body{
   margin:0;
@@ -149,6 +150,8 @@ nav.links a:hover{opacity:0.7;}
   .hero-photo{width:220px;height:300px;}
   .expand-btn{right:calc(50% - 110px);width:44px;height:44px;}
   .expand-btn svg{width:16px;height:16px;}
+  .contact-list li{font-size:0.86rem;}
+  .contact-list .k{min-width:68px;}
 }
 
 section{padding:104px 0;position:relative;}
@@ -249,16 +252,19 @@ section.alt{background:var(--bg-2);border-top:1px solid var(--line);border-botto
 .contact-panel{
   background:var(--black);border-radius:24px;
   padding:60px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:52px;
+  min-width:0;
 }
+.contact-panel > div{min-width:0;}
 .contact-panel h2{font-size:clamp(1.7rem,3.2vw,2.3rem);margin-bottom:16px;color:var(--white);}
 .contact-panel p.lead{color:var(--muted-2);max-width:44ch;}
 .contact-list{list-style:none;margin:30px 0 0;padding:0;}
 .contact-list li{
   display:flex;align-items:center;gap:14px;padding:14px 0;border-top:1px solid var(--line-dark);
-  font-size:0.94rem;color:var(--white);
+  font-size:0.94rem;color:var(--white);flex-wrap:wrap;
 }
 .contact-list li:first-child{border-top:none;}
-.contact-list .k{color:var(--muted-2);font-family:'JetBrains Mono',monospace;font-size:0.78rem;min-width:84px;}
+.contact-list .k{color:var(--muted-2);font-family:'JetBrains Mono',monospace;font-size:0.78rem;min-width:84px;flex-shrink:0;}
+.contact-list li a, .contact-list li span:not(.k){overflow-wrap:anywhere;min-width:0;flex:1;}
 .contact-side{background:#161616;border-radius:16px;padding:30px;align-self:start;}
 .contact-side p{color:var(--muted-2);font-size:0.9rem;margin:0 0 18px;}
 .btn{
@@ -491,8 +497,67 @@ footer{padding:40px 0;text-align:center;color:var(--muted);font-size:0.85rem;}
         <p>A black-and-gold luxury salon site with service sections, gallery, and integrated booking for a unisex clientele.</p>
         <div class="work-tags"><span>Salon</span><span>Booking</span></div>
       </div>
+      <div class="work-card">
+        <span class="idx">07</span>
+        <h3>MO's Tech Connect</h3>
+        <p>Support hub for university &amp; TVET applications, Grade 12 tutoring, and business administration, with a spam-protected enquiry form.</p>
+        <div class="work-tags"><span>Education</span><span>Contact Form</span></div>
+      </div>
+      <div class="work-card">
+        <span class="idx">08</span>
+        <h3>Ambassador Security &amp; Training</h3>
+        <p>Website for a PSIRA-accredited security training institution in Limpopo, built to showcase programmes and simplify enrolment.</p>
+        <div class="work-tags"><span>Security Training</span><span>Business Website</span></div>
+      </div>
+      <div class="work-card">
+        <span class="idx">09</span>
+        <h3>Assy Surprises</h3>
+        <p>Bold hot pink &amp; gold multi-page site for a candy, party pack, and gift vendor, with WhatsApp ordering on every product page.</p>
+        <div class="work-tags"><span>Gifts &amp; Candy</span><span>WhatsApp Orders</span></div>
+      </div>
+      <div class="work-card">
+        <span class="idx">10</span>
+        <h3>Root Essance Online Store</h3>
+        <p>Herbal hair product eCommerce store with clean product listings and a brand-focused layout that builds trust fast.</p>
+        <div class="work-tags"><span>eCommerce</span><span>Brand Design</span></div>
+      </div>
+      <div class="work-card">
+        <span class="idx">11</span>
+        <h3>Matambele PTY LTD</h3>
+        <p>Fumigation and pest control business website built for trust, with fast quotation requests and WhatsApp integration.</p>
+        <div class="work-tags"><span>Pest Control</span><span>Lead Generation</span></div>
+      </div>
+      <div class="work-card">
+        <span class="idx">12</span>
+        <h3>DAL B Holdings</h3>
+        <p>Professional cleaning services website with an online booking system, designed to move visitors from landing to booking fast.</p>
+        <div class="work-tags"><span>Cleaning Services</span><span>Online Booking</span></div>
+      </div>
+      <div class="work-card">
+        <span class="idx">13</span>
+        <h3>Step By Step Builders</h3>
+        <p>Modern construction website focused on renovation services, with a strong hero and clear calls to action for free quotes.</p>
+        <div class="work-tags"><span>Construction</span><span>Lead Generation</span></div>
+      </div>
+      <div class="work-card">
+        <span class="idx">14</span>
+        <h3>Blossom Hair Studio</h3>
+        <p>Modern salon website with elegant feminine styling and a simple booking journey optimised for mobile users.</p>
+        <div class="work-tags"><span>Salon</span><span>Booking Flow</span></div>
+      </div>
+      <div class="work-card">
+        <span class="idx">15</span>
+        <h3>Lufuno Construction</h3>
+        <p>Construction company website with a project gallery, quote request form, and client testimonials working together to convert visitors.</p>
+        <div class="work-tags"><span>Construction</span><span>Project Gallery</span></div>
+      </div>
+      <div class="work-card">
+        <span class="idx">16</span>
+        <h3>Socks R Us</h3>
+        <p>Accessories storefront with a clean category structure and review integration guiding visitors toward buying.</p>
+        <div class="work-tags"><span>Accessories</span><span>Storefront</span></div>
+      </div>
     </div>
-    <p class="work-more">Plus Ambassador Security &amp; Training, Root Essance, Assy Surprises, Matambele, DAL B Holdings, Step By Step Builders, Blossom Hair Studio, Lufuno Construction, Socks R Us and more — <a href="https://github.com/GivenMu" target="_blank" rel="noreferrer">see everything on GitHub →</a></p>
   </div>
 </section>
 
