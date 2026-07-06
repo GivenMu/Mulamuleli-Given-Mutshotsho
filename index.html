@@ -292,6 +292,7 @@ footer{padding:40px 0;text-align:center;color:var(--muted);font-size:0.85rem;}
 }
 @media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important;}}
 </style>
+<link rel="stylesheet" href="animations.css">
 </head>
 <body>
 
@@ -346,16 +347,16 @@ footer{padding:40px 0;text-align:center;color:var(--muted);font-size:0.85rem;}
 
 <section id="about">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head" data-animate="fade-up">
       <span class="eyebrow">About me</span>
       <h2>Problem solver first, developer second.</h2>
     </div>
     <div class="about-grid">
-      <div>
+      <div data-animate="fade-left">
         <p>I am a <strong>Software Developer and IT Professional</strong> specializing in the design, development, and deployment of high-performance digital solutions that solve real business challenges. With a strong foundation in IT support, systems troubleshooting, and full-stack web development, I combine technical expertise with strategic thinking to deliver scalable, secure, and user-centric applications.</p>
         <p>My approach to software development is driven by <strong>functionality, performance, and reliability</strong>. Every solution I build is designed with careful attention to architecture, user experience, responsiveness, accessibility, and maintainability. From business websites and custom web applications to e-commerce platforms and administrative systems, I develop technology that is not only visually refined but also engineered to perform efficiently in real-world environments.</p>
       </div>
-      <div>
+      <div data-animate="fade-right">
         <p>Through my freelance development practice, I have partnered with businesses across multiple industries — including <strong>construction, hospitality, beauty, cleaning services, retail, and professional services</strong> — to transform ideas into impactful digital products. I oversee the complete development lifecycle, from requirements gathering and UI/UX implementation to backend functionality, database integration, deployment, optimization, and ongoing technical support.</p>
         <p>My technical background extends beyond development into <strong>IT infrastructure, hardware and software diagnostics, system administration, and technical support</strong>, enabling me to approach every project with a comprehensive understanding of both software engineering and operational reliability. I am committed to delivering clean, maintainable code, adopting modern development practices, and continuously refining my expertise — with the goal of creating digital experiences that empower businesses and drive sustainable growth through innovative technology.</p>
         <div class="tag-row">
@@ -370,13 +371,13 @@ footer{padding:40px 0;text-align:center;color:var(--muted);font-size:0.85rem;}
 
 <section class="alt" id="skills">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head" data-animate="fade-up">
       <span class="eyebrow">Skills</span>
       <h2>What I bring to a team</h2>
       <p>A mix of hands-on technical support and practical software delivery.</p>
     </div>
     <div class="skills-grid">
-      <div class="skill-card">
+      <div class="skill-card" data-animate="fade-up">
         <h3>IT Support</h3>
         <ul>
           <li>Hardware &amp; software troubleshooting</li>
@@ -384,7 +385,7 @@ footer{padding:40px 0;text-align:center;color:var(--muted);font-size:0.85rem;}
           <li>Call logging &amp; issue tracking</li>
         </ul>
       </div>
-      <div class="skill-card">
+      <div class="skill-card" data-animate="fade-up">
         <h3>Development</h3>
         <ul>
           <li>Responsive website design &amp; builds</li>
@@ -392,7 +393,7 @@ footer{padding:40px 0;text-align:center;color:var(--muted);font-size:0.85rem;}
           <li>Android app companion builds</li>
         </ul>
       </div>
-      <div class="skill-card">
+      <div class="skill-card" data-animate="fade-up">
         <h3>People &amp; process</h3>
         <ul>
           <li>Client communication &amp; requirements gathering</li>
@@ -406,14 +407,14 @@ footer{padding:40px 0;text-align:center;color:var(--muted);font-size:0.85rem;}
 
 <section id="log">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head" data-animate="fade-up">
       <span class="eyebrow">Experience</span>
       <h2>Recent activity log</h2>
       <p>A running record of where I've worked and what I did there.</p>
     </div>
     <div class="log-console">
       <div class="log-bar">given@career:~$ tail -f experience.log <span class="tag2">3 entries</span></div>
-      <div class="log-entry">
+      <div class="log-entry" data-animate="fade-left">
         <div class="log-time">2026 — present</div>
         <div class="log-content">
           <h4>IT &amp; QR Menu / Website Designer</h4>
@@ -425,7 +426,7 @@ footer{padding:40px 0;text-align:center;color:var(--muted);font-size:0.85rem;}
           </ul>
         </div>
       </div>
-      <div class="log-entry">
+      <div class="log-entry" data-animate="fade-left">
         <div class="log-time">2025 — present</div>
         <div class="log-content">
           <h4>Freelance Website Creator</h4>
@@ -437,7 +438,7 @@ footer{padding:40px 0;text-align:center;color:var(--muted);font-size:0.85rem;}
           </ul>
         </div>
       </div>
-      <div class="log-entry">
+      <div class="log-entry" data-animate="fade-left">
         <div class="log-time">01/2025 – 05/2025</div>
         <div class="log-content">
           <h4>Student Mentor (Part-time)</h4>
@@ -456,103 +457,103 @@ footer{padding:40px 0;text-align:center;color:var(--muted);font-size:0.85rem;}
 
 <section class="alt" id="work">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head" data-animate="fade-up">
       <span class="eyebrow">Selected work</span>
       <h2>Projects I've shipped</h2>
       <p>A sample of live business websites and systems I've designed and built.</p>
     </div>
     <div class="work-grid">
-      <div class="work-card">
+      <div class="work-card" data-animate="fade-up">
         <span class="idx">01</span>
         <h3>Nandoni Waterfront Resort</h3>
         <p>Digital menu and QR code ordering system built for a modern waterfront resort — guests scan and browse from their phones.</p>
         <div class="work-tags"><span>QR System</span><span>Hospitality</span></div>
       </div>
-      <div class="work-card">
+      <div class="work-card" data-animate="fade-up">
         <span class="idx">02</span>
         <h3>Harvest Printing Centre</h3>
         <p>Business website plus companion Android app for a Pretoria printing &amp; signage company, with a Firebase admin dashboard.</p>
         <div class="work-tags"><span>Firebase</span><span>Android</span></div>
       </div>
-      <div class="work-card">
+      <div class="work-card" data-animate="fade-up">
         <span class="idx">03</span>
         <h3>The Cleaning Queens</h3>
         <p>Luxury booking website for a Johannesburg cleaning company, with quote and booking forms wired to automated email alerts.</p>
         <div class="work-tags"><span>Booking Forms</span><span>Luxury UI</span></div>
       </div>
-      <div class="work-card">
+      <div class="work-card" data-animate="fade-up">
         <span class="idx">04</span>
         <h3>African Root</h3>
         <p>Herbal eCommerce store with 50+ products, category filtering, a product-code ordering system, and online checkout.</p>
         <div class="work-tags"><span>eCommerce</span><span>Checkout</span></div>
       </div>
-      <div class="work-card">
+      <div class="work-card" data-animate="fade-up">
         <span class="idx">05</span>
         <h3>Sneakers Galore</h3>
         <p>Online sneaker store built for fast browsing, with 50+ listings and a direct WhatsApp order flow.</p>
         <div class="work-tags"><span>eCommerce</span><span>WhatsApp Orders</span></div>
       </div>
-      <div class="work-card">
+      <div class="work-card" data-animate="fade-up">
         <span class="idx">06</span>
         <h3>Beauty On Long Unisex Salon</h3>
         <p>A black-and-gold luxury salon site with service sections, gallery, and integrated booking for a unisex clientele.</p>
         <div class="work-tags"><span>Salon</span><span>Booking</span></div>
       </div>
-      <div class="work-card">
+      <div class="work-card" data-animate="fade-up">
         <span class="idx">07</span>
         <h3>MO's Tech Connect</h3>
         <p>Support hub for university &amp; TVET applications, Grade 12 tutoring, and business administration, with a spam-protected enquiry form.</p>
         <div class="work-tags"><span>Education</span><span>Contact Form</span></div>
       </div>
-      <div class="work-card">
+      <div class="work-card" data-animate="fade-up">
         <span class="idx">08</span>
         <h3>Ambassador Security &amp; Training</h3>
         <p>Website for a PSIRA-accredited security training institution in Limpopo, built to showcase programmes and simplify enrolment.</p>
         <div class="work-tags"><span>Security Training</span><span>Business Website</span></div>
       </div>
-      <div class="work-card">
+      <div class="work-card" data-animate="fade-up">
         <span class="idx">09</span>
         <h3>Assy Surprises</h3>
         <p>Bold hot pink &amp; gold multi-page site for a candy, party pack, and gift vendor, with WhatsApp ordering on every product page.</p>
         <div class="work-tags"><span>Gifts &amp; Candy</span><span>WhatsApp Orders</span></div>
       </div>
-      <div class="work-card">
+      <div class="work-card" data-animate="fade-up">
         <span class="idx">10</span>
         <h3>Root Essance Online Store</h3>
         <p>Herbal hair product eCommerce store with clean product listings and a brand-focused layout that builds trust fast.</p>
         <div class="work-tags"><span>eCommerce</span><span>Brand Design</span></div>
       </div>
-      <div class="work-card">
+      <div class="work-card" data-animate="fade-up">
         <span class="idx">11</span>
         <h3>Matambele PTY LTD</h3>
         <p>Fumigation and pest control business website built for trust, with fast quotation requests and WhatsApp integration.</p>
         <div class="work-tags"><span>Pest Control</span><span>Lead Generation</span></div>
       </div>
-      <div class="work-card">
+      <div class="work-card" data-animate="fade-up">
         <span class="idx">12</span>
         <h3>DAL B Holdings</h3>
         <p>Professional cleaning services website with an online booking system, designed to move visitors from landing to booking fast.</p>
         <div class="work-tags"><span>Cleaning Services</span><span>Online Booking</span></div>
       </div>
-      <div class="work-card">
+      <div class="work-card" data-animate="fade-up">
         <span class="idx">13</span>
         <h3>Step By Step Builders</h3>
         <p>Modern construction website focused on renovation services, with a strong hero and clear calls to action for free quotes.</p>
         <div class="work-tags"><span>Construction</span><span>Lead Generation</span></div>
       </div>
-      <div class="work-card">
+      <div class="work-card" data-animate="fade-up">
         <span class="idx">14</span>
         <h3>Blossom Hair Studio</h3>
         <p>Modern salon website with elegant feminine styling and a simple booking journey optimised for mobile users.</p>
         <div class="work-tags"><span>Salon</span><span>Booking Flow</span></div>
       </div>
-      <div class="work-card">
+      <div class="work-card" data-animate="fade-up">
         <span class="idx">15</span>
         <h3>Lufuno Construction</h3>
         <p>Construction company website with a project gallery, quote request form, and client testimonials working together to convert visitors.</p>
         <div class="work-tags"><span>Construction</span><span>Project Gallery</span></div>
       </div>
-      <div class="work-card">
+      <div class="work-card" data-animate="fade-up">
         <span class="idx">16</span>
         <h3>Socks R Us</h3>
         <p>Accessories storefront with a clean category structure and review integration guiding visitors toward buying.</p>
@@ -567,23 +568,23 @@ footer{padding:40px 0;text-align:center;color:var(--muted);font-size:0.85rem;}
     <div>
       <span class="eyebrow">Achievements</span>
       <h2 style="margin-bottom:30px;">Certifications &amp; wins</h2>
-      <div class="timeline-item">
+      <div class="timeline-item" data-animate="fade-up">
         <span class="yr">2026</span>
         <div><h4>Future Interns — Data Science &amp; Analytics Certificate</h4><p>Applied data science fundamentals through a structured internship programme.</p></div>
       </div>
-      <div class="timeline-item">
+      <div class="timeline-item" data-animate="fade-up">
         <span class="yr">2024</span>
         <div><h4>FNB App Academy — Full Stack Development Certificate</h4><p>Completed full stack development training with FNB's App Academy.</p></div>
       </div>
-      <div class="timeline-item">
+      <div class="timeline-item" data-animate="fade-up">
         <span class="yr">2024</span>
         <div><h4>ALX Pathways Programme</h4><p>Gained hands-on experience in software development and core IT skills.</p></div>
       </div>
-      <div class="timeline-item">
+      <div class="timeline-item" data-animate="fade-up">
         <span class="yr">—</span>
         <div><h4>Rosebank College Hackathon, Pretoria</h4><p>Contributed to a collaborative project, sharpening problem-solving under time pressure.</p></div>
       </div>
-      <div class="timeline-item">
+      <div class="timeline-item" data-animate="fade-up">
         <span class="yr">2024</span>
         <div><h4>IT Support Services Certification</h4><p>Built a strong foundation in troubleshooting, system maintenance and technical support.</p></div>
       </div>
@@ -591,15 +592,15 @@ footer{padding:40px 0;text-align:center;color:var(--muted);font-size:0.85rem;}
     <div>
       <span class="eyebrow">Education</span>
       <h2 style="margin-bottom:30px;">Education</h2>
-      <div class="timeline-item">
+      <div class="timeline-item" data-animate="fade-up">
         <span class="yr">2026</span>
         <div><h4>Information Technology: Software Development</h4><p>Rosebank College, Pretoria — expected December 2026</p></div>
       </div>
-      <div class="timeline-item">
+      <div class="timeline-item" data-animate="fade-up">
         <span class="yr">2024</span>
         <div><h4>Information Technology in Support Services</h4><p>Rosebank College, Pretoria — completed June 2024</p></div>
       </div>
-      <div class="timeline-item">
+      <div class="timeline-item" data-animate="fade-up">
         <span class="yr">2021</span>
         <div><h4>Matric</h4><p>Mbilwi Secondary School, Thohoyandou — completed December 2021</p></div>
       </div>
@@ -609,7 +610,7 @@ footer{padding:40px 0;text-align:center;color:var(--muted);font-size:0.85rem;}
 
 <section class="alt" id="contact">
   <div class="wrap">
-    <div class="contact-panel">
+    <div class="contact-panel" data-animate="fade-up">
       <div>
         <span class="eyebrow" style="color:#8a8a8a;">Contact</span>
         <h2>Let's build something.</h2>
@@ -637,22 +638,8 @@ footer{padding:40px 0;text-align:center;color:var(--muted);font-size:0.85rem;}
 
 <script>
 document.getElementById('year').textContent = new Date().getFullYear();
-document.querySelector('.nav-toggle').addEventListener('click', function(){
-  var l = document.querySelector('nav.links');
-  var open = l.style.display === 'flex';
-  l.style.display = open ? 'none' : 'flex';
-  l.style.flexDirection = 'column';
-  l.style.position = 'absolute';
-  l.style.top = '78px';
-  l.style.left = '20px';
-  l.style.right = '20px';
-  l.style.background = '#0d0d0d';
-  l.style.padding = '22px 24px';
-  l.style.borderRadius = '14px';
-  l.style.gap = '18px';
-  l.style.zIndex = '70';
-});
 </script>
+<script src="animations.js"></script>
 
 </body>
 </html>
