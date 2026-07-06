@@ -1,0 +1,143 @@
+/* ======================================================================
+   GIVENDEV Portfolio — Animation Layer
+   Works on both desktop and mobile. Add AFTER your main stylesheet:
+   <link rel="stylesheet" href="animations.css">
+   Pair with animations.js (handles scroll-reveal + nav + progress bar).
+   ====================================================================== */
+
+@media (prefers-reduced-motion: no-preference) {
+
+  /* ---------- 1. Scroll reveal (add data-animate="..." to any element) ---------- */
+  [data-animate] {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity .8s cubic-bezier(.16,.84,.24,1),
+                transform .8s cubic-bezier(.16,.84,.24,1);
+    will-change: opacity, transform;
+  }
+  [data-animate="fade-up"]    { transform: translateY(32px); }
+  [data-animate="fade-left"]  { transform: translateX(-36px); }
+  [data-animate="fade-right"] { transform: translateX(36px); }
+  [data-animate="zoom-in"]    { transform: scale(.9); }
+
+  [data-animate].in-view {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+
+  /* ---------- 2. Hero entrance — plays once on page load ---------- */
+  .hero-copy .hi,
+  .hero-copy h1,
+  .hero-copy .role,
+  .hero-copy .social-row,
+  .hero-photo-wrap,
+  .expand-btn {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity .8s cubic-bezier(.16,.84,.24,1),
+                transform .8s cubic-bezier(.16,.84,.24,1);
+  }
+  body.page-loaded .hero-copy .hi         { opacity: 1; transform: none; transition-delay: .05s; }
+  body.page-loaded .hero-copy h1          { opacity: 1; transform: none; transition-delay: .15s; }
+  body.page-loaded .hero-copy .role       { opacity: 1; transform: none; transition-delay: .28s; }
+  body.page-loaded .hero-copy .social-row { opacity: 1; transform: none; transition-delay: .4s; }
+  body.page-loaded .hero-photo-wrap       { opacity: 1; transform: none; transition-delay: .3s; }
+  body.page-loaded .expand-btn            { opacity: 1; transform: none; transition-delay: .6s; }
+
+  .nav-logo, .nav-right {
+    opacity: 0;
+    transform: translateY(-14px);
+    transition: opacity .6s ease, transform .6s ease;
+  }
+  body.page-loaded .nav-logo  { opacity: 1; transform: none; transition-delay: .05s; }
+  body.page-loaded .nav-right { opacity: 1; transform: none; transition-delay: .15s; }
+
+  /* ---------- 3. Hover / tap micro-interactions ---------- */
+  .work-card, .skill-card, .social-btn, .btn, .nav-cta, .contact-side, .tag {
+    transition: transform .35s cubic-bezier(.16,.84,.24,1),
+                box-shadow .35s ease,
+                border-color .35s ease,
+                background-color .25s ease;
+  }
+  .work-card:hover  { box-shadow: 0 18px 40px rgba(0,0,0,.08); }
+  .skill-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--black, #0d0d0d);
+    box-shadow: 0 14px 30px rgba(0,0,0,.06);
+  }
+  .btn:hover  { transform: translateY(-2px); }
+  .btn:active, .nav-cta:active, .social-btn:active { transform: scale(.94); }
+
+  .nav-logo { transition: transform .5s cubic-bezier(.16,.84,.24,1); }
+  .nav-logo:hover { transform: rotate(90deg); }
+
+  nav.links a { position: relative; }
+  nav.links a::after {
+    content: "";
+    position: absolute;
+    left: 0; bottom: -4px;
+    width: 0; height: 1.5px;
+    background: currentColor;
+    transition: width .3s ease;
+  }
+  nav.links a:hover::after { width: 100%; }
+
+  .contact-list a { transition: opacity .25s ease; }
+  .contact-list a:hover { opacity: .7; }
+
+  /* ---------- 4. Mobile nav — smooth open/close instead of instant toggle ---------- */
+  @media (max-width: 900px) {
+    nav.links {
+      display: flex;
+      flex-direction: column;
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      gap: 0;
+      padding: 0 24px;
+      margin: 0;
+      position: absolute;
+      top: 78px; left: 20px; right: 20px;
+      background: #0d0d0d;
+      border-radius: 14px;
+      z-index: 70;
+      transition: max-height .45s cubic-bezier(.16,.84,.24,1),
+                  opacity .35s ease,
+                  padding .45s ease;
+    }
+    nav.links.nav-open {
+      max-height: 320px;
+      opacity: 1;
+      padding: 22px 24px;
+      gap: 18px;
+    }
+  }
+
+  /* ---------- 5. Scroll progress bar ---------- */
+  #scroll-progress {
+    position: fixed;
+    top: 0; left: 0;
+    height: 3px;
+    width: 0%;
+    background: #0d0d0d;
+    z-index: 200;
+    transition: width .1s linear;
+  }
+}
+
+/* ---------- Accessibility: kill all motion if the user asked for it ---------- */
+@media (prefers-reduced-motion: reduce) {
+  [data-animate],
+  .hero-copy *,
+  .hero-photo-wrap,
+  .expand-btn,
+  .nav-logo,
+  .nav-right,
+  nav.links {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    max-height: none !important;
+  }
+  #scroll-progress { display: none; }
+}
